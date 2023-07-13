@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/heptio-images/ks-guestbook-demo
-  tag: 0.1
+  repository: anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/nginx
+  tag: 1.14.1-8.6
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
 
 ingress:
